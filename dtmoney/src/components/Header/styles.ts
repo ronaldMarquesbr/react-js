@@ -13,6 +13,12 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 360px) { 
+        img{
+            height: 2.3rem;
+        }
+    }
+
     button{
         font-size: 1rem;
         color: #FFF;
@@ -24,6 +30,15 @@ export const Content = styled.div`
 
         transition: filter .2s;
 
+        @media (max-width: 768px) { 
+            padding: 0 1rem;
+        }
+
+        @media (max-width: 360px) { 
+            padding: 0 .5rem;
+            font-size: .8rem;
+        }
+        
         &:hover{
             filter: brightness(.9)
         }

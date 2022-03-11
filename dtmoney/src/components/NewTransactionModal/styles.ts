@@ -4,7 +4,8 @@ import { darken, lighten, transparentize } from "polished";
 export const Container = styled.form`
     h2{
         color: var(--text-title);
-        font-size: 1.5rem;
+        font-size: min(1.5rem, 5vw);
+        font-weight: 600;
         margin-bottom: 2rem;
     }
 
@@ -104,5 +105,9 @@ export const RadioBox = styled.button<RadioBoxProps>`
         margin-left: 1rem;
         font-size: 1rem;
         color: var(--text-title);
+
+        @media (max-width: 320px) {
+            margin-left: .2rem;
+        }
     }
 `

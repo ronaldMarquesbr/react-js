@@ -35,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background: var(--background);
         -webkit-font-smoothing: antialised;
+        overflow-x: hidden;
+        max-width: 100vw;
+        width: 100vw;
+        min-height: 100vh;
     }
 
     body, input, textarea, button {
@@ -77,6 +81,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 3rem;
         position: relative;
         border-radius: .3rem;
+
+        @media (max-width: 576px) {
+            width: 90%;
+        }
     }
 
     .react-modal-close {

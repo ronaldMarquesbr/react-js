@@ -1,8 +1,12 @@
-import incomeImg from "../../assets/income.svg"
-import outcomeImg from "../../assets/outcome.svg"
-import totalImg from "../../assets/total.svg"
 import { useTransactions } from "../../hooks/useTransactions";
+
+import incomeImg from "../../assets/income.svg";
+import outcomeImg from "../../assets/outcome.svg";
+import totalImg from "../../assets/total.svg";
+
 import { Container } from "./styles";
+
+
 
 export function Summary(){
 
@@ -26,7 +30,8 @@ export function Summary(){
 
     return(
         <Container>
-            <div>
+
+            <div className="card-container">
                 <header>
                     <p>Entradas</p>
                     <img src={incomeImg} alt="Entradas" />
@@ -39,7 +44,7 @@ export function Summary(){
                 </strong>
             </div>
 
-            <div>
+            <div className="card-container">
                 <header>
                     <p>Saídas</p>
                     <img src={outcomeImg} alt="Saídas" />
@@ -53,7 +58,7 @@ export function Summary(){
                 </strong>
             </div>
 
-            <div className="highlight-background">
+            <div className="card-container highlight-background">
                 <header>
                     <p>Total</p>
                     <img src={totalImg} alt="Entradas" />
@@ -65,6 +70,7 @@ export function Summary(){
                     }).format(summary.total)}
                 </strong>
             </div>
+
         </Container>
     );
 }
