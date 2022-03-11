@@ -20,3 +20,12 @@ Projeto referente ao Chapter II do curso de ReactJS da rocketseat.
 - MirageJS
 - Context API
 - Axios
+
+
+## Screenshots
+
+![App Screenshot](media/dash.png)
+
+![form Screenshot](media/form.png)
+
+![Result Screenshot](media/result.png)
